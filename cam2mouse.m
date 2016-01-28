@@ -45,7 +45,7 @@ while true
     img2 = rgb2hsv(img);
     img2 = img2(:,:,1);
     
-    % Binarizar a imagem. (Azuis comecam em 0.6 aprox)
+    % Binarizar a imagem capturando o azul. (Azuis comecam em 0.6 aprox)
         img2 = img2 > 0.6;
     
     % Remover ruído (uma erosão, seguida de uma dilatação é simples e foi
